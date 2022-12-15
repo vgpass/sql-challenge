@@ -29,9 +29,11 @@ This repository contains the required files for the SQL Challenge
 
 Completed ERD shows primary keys assigned to each table. Two of the tables have composite keys. Foreign keys assigned to establish correct relationships between tables.
 
-![Image of completed ERD]](EmployeeSQL/employee-db_ERD.png)
+![employee-db_ERD](https://user-images.githubusercontent.com/112782266/207781600-0aa60998-2bd4-44d0-827d-e780856e39f4.png)
 
 First query lists the employee number, last name, first name, sex, and salary of each employee. 
+
+[data-1671061991265.csv](https://github.com/vgpass/sql-challenge/files/10234062/data-1671061991265.csv)
 
 [First Query](EmployeeSQL/data-1671061991265.csv)
 
