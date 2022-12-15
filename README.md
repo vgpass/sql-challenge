@@ -33,7 +33,7 @@ Completed ERD shows primary keys assigned to each table. Two of the tables have 
 
 First query lists the employee number, last name, first name, sex, and salary of each employee. 
 
-[data-1671061991265.csv](https://github.com/vgpass/sql-challenge/files/10234062/data-1671061991265.csv)
+[.csv File of First Query](https://github.com/vgpass/sql-challenge/files/10234062/data-1671061991265.csv)
 
 [First Query](EmployeeSQL/data-1671061991265.csv)
 
