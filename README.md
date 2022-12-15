@@ -35,8 +35,6 @@ First query lists the employee number, last name, first name, sex, and salary of
 
 [.csv File of First Query](https://github.com/vgpass/sql-challenge/files/10234062/data-1671061991265.csv)
 
-[First Query](EmployeeSQL/data-1671061991265.csv)
-
 ## **Comments and Thoughts**
 
 The most difficult part of this challenge for me was setting up the tables and getting the keys right. I had trouble importing the data after the foreign keys were created, so I ended up creating the tables first with the primary keys, importing the data, then modifying the tables to create the foreign keys. In this order, I was able to get all the data imported and the table created with both their primary keys and foreign keys without any errors.
