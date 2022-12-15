@@ -1,4 +1,4 @@
-CREATE TABLE departments (
+CREATE TABLE IF NOT EXISTS departments (
     dept_no VARCHAR   NOT NULL,
     dept_name VARCHAR   NOT NULL,
     CONSTRAINT pk_departments PRIMARY KEY (
@@ -6,7 +6,7 @@ CREATE TABLE departments (
      )
 );
 
-CREATE TABLE emp_dept_junction (
+CREATE TABLE IF NOT EXISTS emp_dept_junction (
     emp_no INT   NOT NULL,
     dept_no VARCHAR   NOT NULL,
     CONSTRAINT pk_emp_dept_junction PRIMARY KEY (
@@ -14,7 +14,7 @@ CREATE TABLE emp_dept_junction (
      )
 );
 
-CREATE TABLE managers (
+CREATE TABLE IF NOT EXISTS managers (
     dept_no VARCHAR   NOT NULL,
     emp_no INT   NOT NULL,
     CONSTRAINT pk_managers PRIMARY KEY (
@@ -22,7 +22,7 @@ CREATE TABLE managers (
      )
 );
 
-CREATE TABLE employees (
+CREATE TABLE IF NOT EXISTS employees (
     emp_no INT   NOT NULL,
     emp_title_id VARCHAR   NOT NULL,
     birth_date DATE   NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE employees (
      )
 );
 
-CREATE TABLE salaries (
+CREATE TABLE IF NOT EXISTS salaries (
     emp_no INT   NOT NULL,
     salary INT   NOT NULL,
     CONSTRAINT pk_salaries PRIMARY KEY (
@@ -43,7 +43,7 @@ CREATE TABLE salaries (
      )
 );
 
-CREATE TABLE titles (
+CREATE TABLE IF NOT EXISTS titles (
     title_id VARCHAR   NOT NULL,
     title VARCHAR   NOT NULL,
     CONSTRAINT pk_titles PRIMARY KEY (
@@ -51,7 +51,7 @@ CREATE TABLE titles (
      )
 );
 
--- ***Imported data into tables here***
+-- ***IMPORTED DATA INTO TABLES HERE***
 
 -- Add foreign keys to all tables. 
 
@@ -73,7 +73,7 @@ REFERENCES titles (title_id);
 ALTER TABLE salaries ADD CONSTRAINT fk_salaries_emp_no FOREIGN KEY(emp_no)
 REFERENCES employees (emp_no);
 
--- Verify table data is complete and primary and forign keys have been generated.
+-- Verify table data is complete and primary and foreign keys have been generated.
 
 select * from employees;
 select * from emp_dept_junction;
